@@ -1,4 +1,4 @@
-# linkedin-cupid
+# linkedin-matchmaking
 A script that uses an LLM (Llama2) and Browser Automation to match LinkedIn profiles together for dating compatibility.
 
 This was built during this [livestream](https://youtube.com/live/_xt2F8rR8CA)
