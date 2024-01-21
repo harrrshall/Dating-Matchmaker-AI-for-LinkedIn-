@@ -1,3 +1,33 @@
+/*
+You enter a linkedin profile
+........It does stuff and then outputs linkedin profiles that are dating matches
+
+
+How we're going to do this
+
+THE BUILD: LinkedIn Dating Matchmaker AI
+
+Technologies:
+
+Node.js
+Puppeteer - Browser Automation
+Llama 2 - Runpod.io endpoints 
+	- PROMPT Llama 2 to do our matching
+
+
+How we're gonna do it
+- We need to scrape the prospect's data
+	- Make a summary using their linkedin Profile
+
+- We need to search LinkedIn for profiles check if it's right gender
+- Gather x amount of profiles and do a tournament style filtering
+	- Buckets of 10 or so profiles. Compare each using the LLM to see which matches with the prospect more
+	......and then eventually we'll have a champion (a match) for each bucket
+	- 100 profiles to check if they're the right dating match
+		get 10, compare each until we get 1 and do this for each 10
+		
+		100 > 10 buckets > 10 profiles > 1 bucket > 1 profile
+*/
 const fs = require("fs");
 
 const LLM = require("./lib/LLM");
