@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const fs = require('fs');
+const fs = require('fs');const fs = require('fs');
 
 function timeout(miliseconds) {
   return new Promise((resolve) => {
